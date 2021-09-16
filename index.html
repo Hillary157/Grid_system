@@ -10,9 +10,62 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Grid System</title>
   </head>
   <body>
+
+    <!-- flex-direction = permite alterar o eixo principal -->
+    <div class="d-flex bg-light border my-2">
+        <div class="p-4 border mx-2">1</div>
+        <div class="p-4 border mx-2">2</div>
+        <div class="p-4 border mx-2">3</div>
+    </div>
+
+    <div class="d-flex flex-row-reverse bg-info border my-2">
+        <div class="p-4 border mx-2">1</div>
+        <div class="p-4 border mx-2">2</div>
+        <div class="p-4 border mx-2">3</div>
+    </div>
+
+    <div class="d-flex flex-column bg-success border my-2">
+        <div class="p-4 border mx-2">1</div>
+        <div class="p-4 border mx-2">2</div>
+        <div class="p-4 border mx-2">3</div>
+        
+    </div>
+
+    <div class="d-flex flex-column-reverse bg-gradient border my-2">
+        <div class="p-4 border mx-2">1</div>
+        <div class="p-4 border mx-2">2</div>
+        <div class="p-4 border mx-2">3</div>
+    </div>
+
+    <!-- alinhamento no eixo principal = horizontal = row-->
+    <div class= "row justify-content-start my-2">
+        <div class="col-4 border">start</div>
+        <div class="col-4 border">start</div>
+
+    </div>
+
+    <div class="row justify-content-center my-2">
+        <div class="col-4 border">center</div>
+        <div class="col-4 border">center</div>
+    </div>
+
+    <div class="row justify-content-end my-2">
+        <div class="col-4 border">end</div>
+        <div class="col-4 border">end</div>
+    </div>
+
+    <div class="row justify-content-around my-2">
+        <div class="col-4 border">around</div>
+        <div class="col-4 border">around</div>
+    </div>
+
+    <div class="row justify-content-between my-2">
+        <div class="col-4 border">between</div>
+        <div class="col-4 border">between</div>
+    </div>
 
     <!--cada linha tem 12 colunas-->
     <div class="container.mt-2 p-4 bg-warning">
